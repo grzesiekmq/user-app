@@ -1,0 +1,15 @@
+{% extends 'base.html.twig' %} {% block body %}
+<div>
+    <a href="{{ path('fos_user_registration_register') }}">
+        <input type="button" value="register">
+    </a>
+</div>
+<p></p>
+<div>
+    <a href="{{ path('fos_user_security_login') }}">
+        <input type="button" value="login">
+    </a>
+</div>
+<p></p>
+<a href="{{ path('users') }}">users</a>
+{% endblock %}
